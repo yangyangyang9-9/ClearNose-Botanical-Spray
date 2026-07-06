@@ -35,16 +35,25 @@ flowchart TD
 
 ## 2. 技术栈说明
 
-- **前端框架**：React@18 + TypeScript
-- **构建工具**：Vite@5（vite-init 模板）
-- **样式方案**：Tailwind CSS@3
-- **路由**：无路由（单页滚动落地页，使用锚点导航）
-- **状态管理**：Zustand（用于语言切换状态 + 倒计时状态）
-- **i18n 方案**：react-i18next + i18next（轻量级，支持中英文）
-- **图标库**：lucide-react
-- **动画**：CSS 动画 + Intersection Observer 实现滚动渐入
-- **后端**：无（纯前端静态部署）
-- **数据库**：无
+* **前端框架**：React\@18 + TypeScript
+
+* **构建工具**：Vite\@5（vite-init 模板）
+
+* **样式方案**：Tailwind CSS\@3
+
+* **路由**：无路由（单页滚动落地页，使用锚点导航）
+
+* **状态管理**：Zustand（用于语言切换状态 + 倒计时状态）
+
+* **i18n 方案**：react-i18next + i18next（轻量级，支持中英文）
+
+* **图标库**：lucide-react
+
+* **动画**：CSS 动画 + Intersection Observer 实现滚动渐入
+
+* **后端**：无（纯前端静态部署）
+
+* **数据库**：无
 
 ## 3. 目录结构
 
@@ -80,64 +89,87 @@ src/
 
 ## 4. 路由定义
 
-| 路由 | 用途 |
-|------|------|
+| 路由  | 用途                   |
+| --- | -------------------- |
 | `/` | 单页落地页（所有区块垂直滚动，锚点导航） |
 
 锚点 ID：
-- `#home` - Hero
-- `#problem` - 痛点
-- `#product` - 产品
-- `#how-to-use` - 使用方法
-- `#ingredients` - 成分
-- `#reviews` - 评价
-- `#faq` - FAQ
-- `#pricing` - 购买区
+
+* `#home` - Hero
+
+* `#problem` - 痛点
+
+* `#product` - 产品
+
+* `#how-to-use` - 使用方法
+
+* `#ingredients` - 成分
+
+* `#reviews` - 评价
+
+* `#faq` - FAQ
+
+* `#pricing` - 购买区
 
 ## 5. 关键实现细节
 
 ### 5.1 多语言 i18n
 
-- 使用 `react-i18next`，默认语言英文（en），可切换中文（zh）
-- 语言选择器位于导航栏右上角
-- 语言偏好存储在 localStorage（key: `clearnose-lang`）
-- 所有文案集中在 `src/i18n/locales/` 下的 JSON 文件
+* 使用 `react-i18next`，默认语言英文（en），可切换中文（zh）
+
+* 语言选择器位于导航栏右上角
+
+* 语言偏好存储在 localStorage（key: `clearnose-lang`）
+
+* 所有文案集中在 `src/i18n/locales/` 下的 JSON 文件
 
 ### 5.2 倒计时
 
-- 使用 Zustand + 自定义 `useCountdown` Hook
-- 24 小时循环倒计时（每天 0 点重置或基于首次访问时间）
-- 显示在购买区上方：HH:MM:SS
+* 使用 Zustand + 自定义 `useCountdown` Hook
+
+* 24 小时循环倒计时（每天 0 点重置或基于首次访问时间）
+
+* 显示在购买区上方：HH:MM:SS
 
 ### 5.3 FAQ 折叠
 
-- 使用原生 `<details>` + `<summary>` 或自定义 useState 控制
-- 单开模式（同时只能展开一个）
-- 平滑高度过渡动画
+* 使用原生 `<details>` + `<summary>` 或自定义 useState 控制
+
+* 单开模式（同时只能展开一个）
+
+* 平滑高度过渡动画
 
 ### 5.4 滚动渐入动画
 
-- Intersection Observer API 监测元素进入视口
-- 添加 CSS class 触发 `fade-in-up` 动画
-- 各区块错位延迟（animation-delay）
+* Intersection Observer API 监测元素进入视口
+
+* 添加 CSS class 触发 `fade-in-up` 动画
+
+* 各区块错位延迟（animation-delay）
 
 ### 5.5 Stripe 跳转
 
-- 所有 Buy Now 按钮统一调用 `handleBuyNow(plan)` 函数
-- 跳转 `https://buy.stripe.com/test`
-- 预留埋点：`gtag('event', 'buy_now_click', { plan })`
+* 所有 Buy Now 按钮统一调用 `handleBuyNow(plan)` 函数
+
+* 跳转 `https://buy.stripe.com/test`
+
+* 预留埋点：`gtag('event', 'buy_now_click', { plan })`
 
 ### 5.6 SEO 优化
 
-- `index.html` 中配置完整 meta 标签
-- 使用语义化 HTML（section, h1, h2, h3, article）
-- 产品图片使用 WebP/优化后的 JPG + alt 属性
-- 配置 `robots.txt` 和 `sitemap.xml`
+* `index.html` 中配置完整 meta 标签
+
+* 使用语义化 HTML（section, h1, h2, h3, article）
+
+* 产品图片使用 WebP/优化后的 JPG + alt 属性
+
+* 配置 `robots.txt` 和 `sitemap.xml`
 
 ### 5.7 Google Analytics 预留
 
-- `index.html` 中预留 GA4 脚本占位（注释状态，ID 为 G-XXXXXXXXXX）
-- 封装 `trackEvent` 工具函数，便于后续启用
+* `index.html` 中预留 GA4 脚本占位（注释状态，ID 为 G-XXXXXXXXXX）
+
+* 封装 `trackEvent` 工具函数，便于后续启用
 
 ## 6. 部署配置
 
@@ -149,14 +181,17 @@ npm run build   # 输出到 dist/
 
 ### 6.2 GitHub Pages 部署
 
-- 设置 `vite.config.ts` 中 `base: '/ClearNose-Botanical-Spray/'`
-- 推送到 `git@github.com:yangyangyang9-9/ClearNose-Botanical-Spray.git`
-- 访问地址：`https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/`
+* 设置 `vite.config.ts` 中 `base: '/ClearNose-Botanical-Spray/'`
+
+* 推送到 `git@github.com:yangyangyang9-9/ClearNose-Botanical-Spray.git`
+
+* 访问地址：`https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/`
 
 ### 6.3 环境变量
 
-- 无需环境变量（Stripe URL 为固定测试地址）
-- GA ID 在代码中占位，后续替换
+* 无需环境变量（Stripe URL 为固定测试地址）
+
+* GA ID 在代码中占位，后续替换
 
 ## 7. 数据模型
 
@@ -174,3 +209,4 @@ npm run build   # 输出到 dist/
   }
 }
 ```
+

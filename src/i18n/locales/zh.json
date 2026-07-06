@@ -250,5 +250,60 @@
   "language": {
     "switch": "EN",
     "label": "语言"
+  },
+  "checkout": {
+    "title": "结算",
+    "subtitle": "通过 PayPal 安全完成订单",
+    "backHome": "返回首页",
+    "orderSummary": "订单摘要",
+    "plan": "套餐",
+    "subtotal": "小计",
+    "shipping": "运费",
+    "shippingFree": "免运费",
+    "total": "总计",
+    "shippingAddress": "配送地址",
+    "shippingDesc": "我们将把订单配送到此地址。",
+    "fullName": "姓名",
+    "email": "邮箱",
+    "phone": "电话",
+    "addressLine1": "详细地址",
+    "addressLine2": "地址补充（选填）",
+    "city": "城市",
+    "state": "州 / 省",
+    "postalCode": "邮政编码",
+    "country": "国家",
+    "selectCountry": "选择国家",
+    "payment": "支付方式",
+    "paymentDesc": "您的支付由 PayPal 安全保护。",
+    "payWithPayPal": "使用 PayPal 支付",
+    "paypalLoading": "正在加载 PayPal...",
+    "paypalFailed": "PayPal 加载失败，请刷新重试。",
+    "fillAddressFirst": "请先完成配送地址填写。",
+    "processing": "正在处理您的支付...",
+    "success": {
+      "title": "订单已确认！",
+      "message": "感谢您的购买。确认邮件已发送至您的邮箱。",
+      "orderNumber": "订单编号",
+      "payer": "支付人",
+      "amount": "支付金额",
+      "backHome": "返回首页"
+    },
+    "error": {
+      "title": "支付失败",
+      "message": "支付过程中出现问题，请重试。",
+      "retry": "重试"
+    },
+    "countries": {
+      "US": "美国",
+      "CA": "加拿大",
+      "GB": "英国",
+      "AU": "澳大利亚",
+      "DE": "德国",
+      "FR": "法国",
+      "JP": "日本",
+      "CN": "中国",
+      "SG": "新加坡",
+      "OTHER": "其他"
+    }
   }
 }

@@ -1,16 +1,18 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { ShoppingBag, Sparkles, Star, Leaf } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { STRIPE_CHECKOUT_URL, IMAGES, trackEvent } from "@/constants/config";
-
-const handleBuyNow = () => {
-  trackEvent("buy_now_click", { source: "hero" });
-  window.open(STRIPE_CHECKOUT_URL, "_blank", "noopener,noreferrer");
-};
+import { IMAGES, trackEvent } from "@/constants/config";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const ref = useScrollReveal<HTMLElement>();
+
+  const handleBuyNow = () => {
+    trackEvent("buy_now_click", { source: "hero" });
+    navigate("/checkout?plan=bundle");
+  };
 
   const handleLearnMore = () => {
     document

@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, Leaf, Globe, ShoppingBag } from "lucide-react";
 import { useLanguageStore } from "@/store/useLanguageStore";
-import { STRIPE_CHECKOUT_URL, trackEvent } from "@/constants/config";
+import { trackEvent } from "@/constants/config";
 
 const NAV_LINKS = [
   { key: "nav.problem", href: "#problem" },
@@ -13,14 +14,10 @@ const NAV_LINKS = [
   { key: "nav.faq", href: "#faq" },
 ];
 
-const handleBuyNow = () => {
-  trackEvent("buy_now_click", { source: "navbar" });
-  window.open(STRIPE_CHECKOUT_URL, "_blank", "noopener,noreferrer");
-};
-
 export const Navbar = () => {
   const { t } = useTranslation();
   const { lang, toggle } = useLanguageStore();
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -41,6 +38,11 @@ export const Navbar = () => {
     if (el) {
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  };
+
+  const handleBuyNow = () => {
+    trackEvent("buy_now_click", { source: "navbar" });
+    navigate("/checkout?plan=bundle");
   };
 
   return (

@@ -250,5 +250,60 @@
   "language": {
     "switch": "中文",
     "label": "Language"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "subtitle": "Complete your order securely with PayPal",
+    "backHome": "Back to Home",
+    "orderSummary": "Order Summary",
+    "plan": "Plan",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingFree": "Free",
+    "total": "Total",
+    "shippingAddress": "Shipping Address",
+    "shippingDesc": "We'll deliver your order to this address.",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "addressLine1": "Address Line 1",
+    "addressLine2": "Address Line 2 (optional)",
+    "city": "City",
+    "state": "State / Province",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "selectCountry": "Select country",
+    "payment": "Payment",
+    "paymentDesc": "Your payment is secured by PayPal.",
+    "payWithPayPal": "Pay with PayPal",
+    "paypalLoading": "Loading PayPal...",
+    "paypalFailed": "Failed to load PayPal. Please refresh and try again.",
+    "fillAddressFirst": "Please complete the shipping address to continue.",
+    "processing": "Processing your payment...",
+    "success": {
+      "title": "Order Confirmed!",
+      "message": "Thank you for your purchase. A confirmation email has been sent to your inbox.",
+      "orderNumber": "Order Number",
+      "payer": "Payer",
+      "amount": "Amount Paid",
+      "backHome": "Back to Home"
+    },
+    "error": {
+      "title": "Payment Failed",
+      "message": "Something went wrong with your payment. Please try again.",
+      "retry": "Try Again"
+    },
+    "countries": {
+      "US": "United States",
+      "CA": "Canada",
+      "GB": "United Kingdom",
+      "AU": "Australia",
+      "DE": "Germany",
+      "FR": "France",
+      "JP": "Japan",
+      "CN": "China",
+      "SG": "Singapore",
+      "OTHER": "Other"
+    }
   }
 }

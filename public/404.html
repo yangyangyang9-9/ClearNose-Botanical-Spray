@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ClearNose Botanical Spray</title>
+    <script>
+      // GitHub Pages SPA 重定向 hack
+      // 将 404 路径存储到 sessionStorage，然后重定向到 index.html
+      var base = "/ClearNose-Botanical-Spray/";
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+        base +
+        "?p=/" +
+        l.pathname.split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
+        (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+        (l.hash ? "#" + l.hash : "")
+      );
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>

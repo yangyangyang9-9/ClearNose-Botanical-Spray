@@ -1,7 +1,12 @@
 // 全局配置常量
 
-// Stripe 测试支付跳转地址
-export const STRIPE_CHECKOUT_URL = "https://buy.stripe.com/test";
+// PayPal Client ID（公开标识符，从前端环境变量读取）
+// 注意：Secret 密钥绝不能放在前端，仅限服务端使用
+export const PAYPAL_CLIENT_ID =
+  import.meta.env.VITE_PAYPAL_CLIENT_ID || "test";
+
+// PayPal 货币
+export const PAYPAL_CURRENCY = "USD";
 
 // Google Analytics ID 占位（替换后启用）
 export const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
@@ -17,6 +22,43 @@ export const IMAGES = {
   detail: `${BASE}images/product-detail.jpg`,
 };
 
+// 套餐类型
+export type PlanId = "single" | "bundle" | "subscription";
+
+// 套餐定价数据（与 i18n 配合使用）
+export interface PlanConfig {
+  id: PlanId;
+  price: number; // 金额（数字，用于 PayPal）
+  priceLabel: string; // 显示价格
+  nameKey: string; // i18n key
+}
+
+export const PLANS: Record<PlanId, PlanConfig> = {
+  single: {
+    id: "single",
+    price: 19.99,
+    priceLabel: "$19.99",
+    nameKey: "pricing.plans.single.name",
+  },
+  bundle: {
+    id: "bundle",
+    price: 49.99,
+    priceLabel: "$49.99",
+    nameKey: "pricing.plans.bundle.name",
+  },
+  subscription: {
+    id: "subscription",
+    price: 24.99,
+    priceLabel: "$24.99",
+    nameKey: "pricing.plans.subscription.name",
+  },
+};
+
+// 免运费门槛
+export const FREE_SHIPPING_THRESHOLD = 30;
+// 单瓶运费
+export const SHIPPING_FEE = 4.99;
+
 // 埋点工具（GA 启用后生效）
 export const trackEvent = (
   eventName: string,
@@ -25,7 +67,6 @@ export const trackEvent = (
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
     window.gtag("event", eventName, params);
   }
-  // 开发环境输出日志
   if (import.meta.env.DEV) {
     console.debug("[trackEvent]", eventName, params);
   }

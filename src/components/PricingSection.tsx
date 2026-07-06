@@ -1,20 +1,22 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Check, ShoppingBag, Clock, Flame } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountdown } from "@/hooks/useCountdown";
-import { STRIPE_CHECKOUT_URL, trackEvent } from "@/constants/config";
+import { trackEvent, type PlanId } from "@/constants/config";
 
-const PLAN_KEYS = ["single", "bundle", "subscription"] as const;
-
-const handleBuyNow = (plan: string) => {
-  trackEvent("buy_now_click", { source: "pricing", plan });
-  window.open(STRIPE_CHECKOUT_URL, "_blank", "noopener,noreferrer");
-};
+const PLAN_KEYS: PlanId[] = ["single", "bundle", "subscription"];
 
 export const PricingSection = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const ref = useScrollReveal<HTMLElement>();
   const { hours, minutes, seconds } = useCountdown();
+
+  const handleBuyNow = (plan: PlanId) => {
+    trackEvent("buy_now_click", { source: "pricing", plan });
+    navigate(`/checkout?plan=${plan}`);
+  };
 
   return (
     <section
