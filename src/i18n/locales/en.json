@@ -173,10 +173,6 @@
       "3": {
         "question": "Is it safe for daily use?",
         "answer": "Yes. ClearNose is formulated with gentle botanical ingredients suitable for daily nasal care routines. If you experience any discomfort, discontinue use and consult a healthcare professional."
-      },
-      "4": {
-        "question": "Can children use it?",
-        "answer": "ClearNose is intended for adults. For children, please consult a pediatrician before use."
       }
     }
   },
@@ -211,19 +207,6 @@
           "30-day guarantee"
         ],
         "cta": "Buy Now"
-      },
-      "subscription": {
-        "name": "Monthly Subscription",
-        "desc": "Never run out. Cancel anytime.",
-        "price": "$24.99",
-        "period": "/month",
-        "features": [
-          "1 × Botanical Spray / month",
-          "Free shipping",
-          "Cancel anytime",
-          "Members-only perks"
-        ],
-        "cta": "Subscribe"
       }
     }
   },

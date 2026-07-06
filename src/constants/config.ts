@@ -23,7 +23,7 @@ export const IMAGES = {
 };
 
 // 套餐类型
-export type PlanId = "single" | "bundle" | "subscription";
+export type PlanId = "single" | "bundle";
 
 // 套餐定价数据（与 i18n 配合使用）
 export interface PlanConfig {
@@ -45,12 +45,6 @@ export const PLANS: Record<PlanId, PlanConfig> = {
     price: 49.99,
     priceLabel: "$49.99",
     nameKey: "pricing.plans.bundle.name",
-  },
-  subscription: {
-    id: "subscription",
-    price: 24.99,
-    priceLabel: "$24.99",
-    nameKey: "pricing.plans.subscription.name",
   },
 };
 

@@ -4,7 +4,7 @@ import { ChevronDown, HelpCircle } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { trackEvent } from "@/constants/config";
 
-const FAQ_IDS = ["1", "2", "3", "4"] as const;
+const FAQ_IDS = ["1", "2", "3"] as const;
 
 export const FAQSection = () => {
   const { t } = useTranslation();

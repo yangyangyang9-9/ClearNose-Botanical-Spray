@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { useCountdown } from "@/hooks/useCountdown";
 import { trackEvent, type PlanId } from "@/constants/config";
 
-const PLAN_KEYS: PlanId[] = ["single", "bundle", "subscription"];
+const PLAN_KEYS: PlanId[] = ["single", "bundle"];
 
 export const PricingSection = () => {
   const { t } = useTranslation();
@@ -68,7 +68,7 @@ export const PricingSection = () => {
         </div>
 
         {/* 价格卡片 */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
+        <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto items-stretch">
           {PLAN_KEYS.map((planKey) => {
             const isPopular = planKey === "bundle";
             const features = t(`pricing.plans.${planKey}.features`, {

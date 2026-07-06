@@ -10,7 +10,7 @@ import { PayPalPayment } from "@/components/checkout/PayPalPayment";
 import { PLANS, IMAGES, type PlanId } from "@/constants/config";
 
 const isPlanId = (v: string | null): v is PlanId =>
-  v === "single" || v === "bundle" || v === "subscription";
+  v === "single" || v === "bundle";
 
 const ProcessingState = () => {
   const { t } = useTranslation();
