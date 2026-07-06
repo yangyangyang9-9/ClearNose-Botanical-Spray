@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/sitemap.xml

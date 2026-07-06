@@ -1,0 +1,254 @@
+{
+  "nav": {
+    "home": "Home",
+    "problem": "Problems",
+    "product": "Product",
+    "howToUse": "How to Use",
+    "ingredients": "Ingredients",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "pricing": "Buy Now",
+    "buyNow": "Buy Now"
+  },
+  "hero": {
+    "badge": "Botanical Nasal Care",
+    "productName": "ClearNose Botanical Spray",
+    "headline": "Breathe easier in minutes with botanical nasal support",
+    "subheadline": "A gentle plant-based spray to help relieve nasal discomfort and promote clearer breathing.",
+    "cta": "Buy Now",
+    "secondaryCta": "Learn More",
+    "trustLine": "Plant-based • Drug-free • Daily use friendly",
+    "stats": {
+      "users": "Happy users",
+      "rating": "Avg. rating",
+      "natural": "Natural ingredients"
+    }
+  },
+  "problem": {
+    "badge": "Common Struggles",
+    "title": "Is nasal discomfort holding you back?",
+    "subtitle": "Everyday triggers that disrupt your breathing, sleep, and focus.",
+    "items": {
+      "congestion": {
+        "title": "Nasal Congestion",
+        "desc": "Blocked passages that make every breath feel heavy and strained."
+      },
+      "runnyNose": {
+        "title": "Runny Nose",
+        "desc": "Constant dripping that breaks your focus and interrupts your day."
+      },
+      "allergies": {
+        "title": "Seasonal Allergies",
+        "desc": "Pollen and dust that leave your nose irritated and inflamed."
+      },
+      "nightBreathing": {
+        "title": "Nighttime Breathing",
+        "desc": "Poor nasal airflow that ruins your sleep and leaves you tired."
+      }
+    }
+  },
+  "product": {
+    "badge": "The Solution",
+    "title": "A botanical spray that works with your body",
+    "subtitle": "ClearNose Botanical Spray is a plant-based nasal spray designed for daily nasal hygiene and comfort.",
+    "description": "Formulated with carefully selected botanical ingredients, ClearNose helps relieve nasal discomfort, supports nasal comfort, and promotes easier breathing — without harsh chemicals or dependency.",
+    "features": {
+      "natural": {
+        "title": "Plant-Based Formula",
+        "desc": "Made with botanical extracts, free from harsh chemicals."
+      },
+      "gentle": {
+        "title": "Gentle & Soothing",
+        "desc": "Helps relieve nasal discomfort without irritation."
+      },
+      "daily": {
+        "title": "Daily Use Friendly",
+        "desc": "Supports ongoing nasal comfort and hygiene."
+      },
+      "breathing": {
+        "title": "Promotes Easier Breathing",
+        "desc": "Helps clear the way for more comfortable breathing."
+      }
+    }
+  },
+  "howToUse": {
+    "badge": "Simple Routine",
+    "title": "Three steps to clearer breathing",
+    "subtitle": "Easy to integrate into your daily nasal care routine.",
+    "steps": {
+      "1": {
+        "title": "Spray",
+        "desc": "Gently insert the nozzle and spray once or twice into each nostril."
+      },
+      "2": {
+        "title": "Wait",
+        "desc": "Stay still for a few minutes to let the botanicals take effect."
+      },
+      "3": {
+        "title": "Rinse",
+        "desc": "If needed, gently blow or rinse your nose to clear loosened mucus."
+      }
+    }
+  },
+  "ingredients": {
+    "badge": "What's Inside",
+    "title": "Botanical ingredients you can trust",
+    "subtitle": "A simple, plant-based formula designed for nasal comfort.",
+    "note": "Full ingredient list available on product packaging. Demo content shown below.",
+    "items": {
+      "aloe": {
+        "title": "Aloe Vera",
+        "desc": "Soothes and moisturizes the nasal lining."
+      },
+      "eucalyptus": {
+        "title": "Eucalyptus",
+        "desc": "Traditionally used to support clear breathing."
+      },
+      "chamomile": {
+        "title": "Chamomile",
+        "desc": "Calms irritation with gentle botanical properties."
+      },
+      "menthol": {
+        "title": "Natural Menthol",
+        "desc": "Provides a cooling sensation for easier breathing."
+      },
+      "seaSalt": {
+        "title": "Sea Salt",
+        "desc": "Helps maintain natural nasal hygiene."
+      },
+      "greenTea": {
+        "title": "Green Tea Extract",
+        "desc": "Rich in antioxidants that support nasal comfort."
+      }
+    }
+  },
+  "reviews": {
+    "badge": "Social Proof",
+    "title": "What our users are saying",
+    "subtitle": "Demo testimonials based on typical user experiences.",
+    "demoNote": "Demo Testimonials",
+    "items": {
+      "1": {
+        "name": "Sarah M.",
+        "role": "Verified Buyer",
+        "rating": 5,
+        "text": "ClearNose became part of my morning routine. It helps relieve congestion gently and I love that it's plant-based."
+      },
+      "2": {
+        "name": "James L.",
+        "role": "Verified Buyer",
+        "rating": 5,
+        "text": "I use it during allergy season and it really supports my nasal comfort. No harsh feeling at all."
+      },
+      "3": {
+        "name": "Emma R.",
+        "role": "Verified Buyer",
+        "rating": 4,
+        "text": "Gentle and easy to use. Helps me breathe easier at night so I sleep much better."
+      },
+      "4": {
+        "name": "David K.",
+        "role": "Verified Buyer",
+        "rating": 5,
+        "text": "Finally a natural option that works for daily nasal hygiene. The botanical scent is refreshing."
+      },
+      "5": {
+        "name": "Lily T.",
+        "role": "Verified Buyer",
+        "rating": 5,
+        "text": "I bought the 3-bottle bundle for my family. Everyone finds it soothing and pleasant to use."
+      },
+      "6": {
+        "name": "Michael B.",
+        "role": "Verified Buyer",
+        "rating": 4,
+        "text": "Promotes easier breathing without the stinging of chemical sprays. Will repurchase."
+      }
+    }
+  },
+  "faq": {
+    "badge": "Good to Know",
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before getting started.",
+    "items": {
+      "1": {
+        "question": "What is ClearNose Botanical Spray?",
+        "answer": "ClearNose is a plant-based nasal spray designed to support nasal comfort and hygiene. It is not a medical product and is not intended to diagnose or treat diseases."
+      },
+      "2": {
+        "question": "How fast does it work?",
+        "answer": "Most users report feeling the soothing botanical effects within a few minutes of application. Individual experiences may vary."
+      },
+      "3": {
+        "question": "Is it safe for daily use?",
+        "answer": "Yes. ClearNose is formulated with gentle botanical ingredients suitable for daily nasal care routines. If you experience any discomfort, discontinue use and consult a healthcare professional."
+      },
+      "4": {
+        "question": "Can children use it?",
+        "answer": "ClearNose is intended for adults. For children, please consult a pediatrician before use."
+      }
+    }
+  },
+  "pricing": {
+    "badge": "Limited Time Offer",
+    "title": "Choose your bundle",
+    "subtitle": "Simple, transparent pricing. 30-day satisfaction guarantee.",
+    "countdownLabel": "Offer ends in",
+    "plans": {
+      "single": {
+        "name": "Single Bottle",
+        "desc": "Try ClearNose with a one-time purchase.",
+        "price": "$19.99",
+        "period": "/one-time",
+        "features": [
+          "1 × Botanical Spray",
+          "Standard shipping",
+          "30-day guarantee"
+        ],
+        "cta": "Buy Now"
+      },
+      "bundle": {
+        "name": "Bundle (3 Bottles)",
+        "desc": "Best value for daily users and families.",
+        "price": "$49.99",
+        "period": "/one-time",
+        "badge": "Most Popular",
+        "features": [
+          "3 × Botanical Spray",
+          "Free shipping",
+          "Save 17%",
+          "30-day guarantee"
+        ],
+        "cta": "Buy Now"
+      },
+      "subscription": {
+        "name": "Monthly Subscription",
+        "desc": "Never run out. Cancel anytime.",
+        "price": "$24.99",
+        "period": "/month",
+        "features": [
+          "1 × Botanical Spray / month",
+          "Free shipping",
+          "Cancel anytime",
+          "Members-only perks"
+        ],
+        "cta": "Subscribe"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Breathe easier, naturally.",
+    "disclaimer": "Disclaimer: ClearNose Botanical Spray is not a medical product and is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare professional before use if you are pregnant, nursing, or have a medical condition.",
+    "rights": "All rights reserved.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "shipping": "Shipping & Returns",
+      "contact": "Contact"
+    }
+  },
+  "language": {
+    "switch": "中文",
+    "label": "Language"
+  }
+}
