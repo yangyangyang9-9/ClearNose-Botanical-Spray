@@ -11,6 +11,15 @@ export const PAYPAL_CURRENCY = "USD";
 // Google Analytics ID 占位（替换后启用）
 export const GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
 
+// EmailJS 配置（用于支付成功后发送订单通知邮件）
+// 在 https://dashboard.emailjs.com/ 获取
+export const EMAILJS_SERVICE_ID =
+  import.meta.env.VITE_EMAILJS_SERVICE_ID || "your_service_id";
+export const EMAILJS_TEMPLATE_ID =
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "your_template_id";
+export const EMAILJS_PUBLIC_KEY =
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "your_public_key";
+
 // 倒计时初始小时数（24 小时循环）
 export const COUNTDOWN_HOURS = 24;
 

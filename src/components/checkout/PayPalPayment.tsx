@@ -11,6 +11,7 @@ import {
   FREE_SHIPPING_THRESHOLD,
   trackEvent,
 } from "@/constants/config";
+import { sendOrderNotificationEmail } from "@/utils/notifyEmail";
 
 const LoadingPayPal = () => {
   const { t } = useTranslation();
@@ -88,14 +89,25 @@ const ButtonsWrapper = () => {
               plan: selectedPlan,
               orderID: details?.id,
             });
-            setOrderResult({
+
+            const orderResult = {
               orderID: details?.id || "",
               payerName:
                 details?.payer?.name?.given_name
                   ? `${details.payer.name.given_name} ${details.payer.name.surname ?? ""}`.trim()
                   : shippingAddress.fullName,
               payerEmail: details?.payer?.email_address || shippingAddress.email,
+            };
+            setOrderResult(orderResult);
+
+            // 发送订单通知邮件（含配送地址）
+            sendOrderNotificationEmail({
+              orderResult,
+              shippingAddress,
+              selectedPlan,
+              total: parseFloat(total),
             });
+
             setStatus("success");
           } catch (err) {
             trackEvent("paypal_payment_error", { error: String(err) });
