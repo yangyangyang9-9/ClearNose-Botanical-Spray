@@ -96,29 +96,20 @@
     "subtitle": "A simple, plant-based formula designed for nasal comfort.",
     "note": "Full ingredient list available on product packaging. Demo content shown below.",
     "items": {
-      "aloe": {
-        "title": "Aloe Vera",
-        "desc": "Soothes and moisturizes the nasal lining."
+      "magnolia": {
+        "title": "Magnolia Flower",
+        "subtitle": "辛夷花",
+        "desc": "Traditionally used to open nasal passages and support clear breathing."
       },
-      "eucalyptus": {
-        "title": "Eucalyptus",
-        "desc": "Traditionally used to support clear breathing."
+      "sweetFlag": {
+        "title": "Sweet Flag",
+        "subtitle": "石菖蒲",
+        "desc": "A botanical extract traditionally valued for clearing the senses."
       },
-      "chamomile": {
-        "title": "Chamomile",
-        "desc": "Calms irritation with gentle botanical properties."
-      },
-      "menthol": {
-        "title": "Natural Menthol",
-        "desc": "Provides a cooling sensation for easier breathing."
-      },
-      "seaSalt": {
-        "title": "Sea Salt",
-        "desc": "Helps maintain natural nasal hygiene."
-      },
-      "greenTea": {
-        "title": "Green Tea Extract",
-        "desc": "Rich in antioxidants that support nasal comfort."
+      "atractylodes": {
+        "title": "Atractylodes",
+        "subtitle": "苍术",
+        "desc": "Helps dry dampness and supports respiratory comfort."
       }
     }
   },

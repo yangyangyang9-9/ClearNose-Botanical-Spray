@@ -1,14 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { Leaf, Info } from "lucide-react";
+import { Flower2, Sprout, Leaf, Info } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const INGREDIENT_KEYS = [
-  "aloe",
-  "eucalyptus",
-  "chamomile",
-  "menthol",
-  "seaSalt",
-  "greenTea",
+const INGREDIENTS = [
+  { key: "magnolia", Icon: Flower2 },
+  { key: "sweetFlag", Icon: Sprout },
+  { key: "atractylodes", Icon: Leaf },
 ] as const;
 
 export const IngredientsSection = () => {
@@ -33,25 +30,24 @@ export const IngredientsSection = () => {
         </div>
 
         {/* 成分卡片网格 */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
-          {INGREDIENT_KEYS.map((key) => (
+        <div className="grid sm:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          {INGREDIENTS.map(({ key, Icon }) => (
             <div
               key={key}
-              className="group p-6 bg-white rounded-2xl border border-brand-100 shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300"
+              className="group p-7 bg-white rounded-2xl border border-brand-100 shadow-soft hover:shadow-card hover:-translate-y-1 transition-all duration-300 text-center"
             >
-              <div className="flex items-start gap-4">
-                <span className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-gradient-to-br from-brand-100 to-brand-50 rounded-xl text-brand-600 group-hover:rotate-6 transition-transform">
-                  <Leaf className="w-6 h-6" strokeWidth={2} />
-                </span>
-                <div>
-                  <h3 className="font-display font-semibold text-base text-gray-900 mb-1.5">
-                    {t(`ingredients.items.${key}.title`)}
-                  </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    {t(`ingredients.items.${key}.desc`)}
-                  </p>
-                </div>
-              </div>
+              <span className="flex items-center justify-center w-16 h-16 mx-auto mb-5 bg-gradient-to-br from-brand-100 to-brand-50 rounded-2xl text-brand-600 group-hover:rotate-6 transition-transform">
+                <Icon className="w-8 h-8" strokeWidth={1.8} />
+              </span>
+              <h3 className="font-display font-semibold text-lg text-gray-900 mb-1">
+                {t(`ingredients.items.${key}.title`)}
+              </h3>
+              <p className="text-xs text-brand-500 font-medium mb-3">
+                {t(`ingredients.items.${key}.subtitle`)}
+              </p>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                {t(`ingredients.items.${key}.desc`)}
+              </p>
             </div>
           ))}
         </div>

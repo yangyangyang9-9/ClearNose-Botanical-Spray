@@ -96,29 +96,20 @@
     "subtitle": "简单、植物基配方，专为鼻腔舒适设计。",
     "note": "完整成分表详见产品包装。以下为演示内容。",
     "items": {
-      "aloe": {
-        "title": "芦荟",
-        "desc": "舒缓和滋润鼻腔黏膜。"
+      "magnolia": {
+        "title": "辛夷花",
+        "subtitle": "Magnolia Flower",
+        "desc": "传统用于通鼻窍，支持呼吸道畅通。"
       },
-      "eucalyptus": {
-        "title": "桉树",
-        "desc": "传统上用于支持呼吸道畅通。"
+      "sweetFlag": {
+        "title": "石菖蒲",
+        "subtitle": "Sweet Flag",
+        "desc": "传统植物萃取，开窍醒神，清爽感官。"
       },
-      "chamomile": {
-        "title": "洋甘菊",
-        "desc": "温和的植物特性，舒缓刺激。"
-      },
-      "menthol": {
-        "title": "天然薄荷醇",
-        "desc": "带来清凉感，让呼吸更顺畅。"
-      },
-      "seaSalt": {
-        "title": "海盐",
-        "desc": "帮助维持鼻腔天然清洁。"
-      },
-      "greenTea": {
-        "title": "绿茶提取物",
-        "desc": "富含抗氧化成分，支持鼻腔舒适。"
+      "atractylodes": {
+        "title": "苍术",
+        "subtitle": "Atractylodes",
+        "desc": "燥湿化浊，支持呼吸道舒适。"
       }
     }
   },
