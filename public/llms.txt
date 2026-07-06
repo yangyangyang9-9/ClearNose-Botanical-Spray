@@ -1,0 +1,64 @@
+# ClearNose Botanical Spray
+
+> ClearNose Botanical Spray is a plant-based nasal spray designed to help relieve nasal discomfort, congestion, and runny nose naturally. Made with three botanical ingredients: Magnolia Flower (辛夷花), Sweet Flag (石菖蒲), and Atractylodes (苍术).
+
+## Product Overview
+
+ClearNose Botanical Spray is a gentle, plant-based nasal care product that supports nasal comfort and hygiene. It is NOT a medical product and is NOT intended to diagnose, treat, cure, or prevent any disease. The formula uses traditional botanical ingredients known for supporting clear breathing and nasal comfort.
+
+## Key Benefits
+
+- Helps relieve nasal congestion naturally
+- Supports easier breathing within minutes
+- Gentle plant-based formula suitable for daily use
+- Made with traditional botanical ingredients
+- Promotes nasal hygiene and comfort
+
+## Ingredients
+
+1. **Magnolia Flower (辛夷花)** — Traditionally used to open nasal passages and support clear breathing.
+2. **Sweet Flag (石菖蒲)** — A botanical extract traditionally valued for clearing the senses.
+3. **Atractylodes (苍术)** — Helps dry dampness and supports respiratory comfort.
+
+## How to Use
+
+1. **Spray** — Apply the botanical spray into each nostril.
+2. **Wait** — Allow a few minutes for the botanical ingredients to take effect.
+3. **Rinse** — Gently rinse if needed.
+
+## Pricing
+
+| Plan | Price | Shipping |
+|------|-------|----------|
+| Single Bottle (1x) | $19.99 | $4.99 |
+| Bundle (3 Bottles) | $49.99 | Free |
+
+Payment is processed securely via PayPal. 30-day satisfaction guarantee.
+
+## Frequently Asked Questions
+
+**What is ClearNose Botanical Spray?**
+ClearNose is a plant-based nasal spray designed to support nasal comfort and hygiene. It is made with Magnolia Flower, Sweet Flag, and Atractylodes. It is not a medical product and is not intended to diagnose or treat diseases.
+
+**How fast does it work?**
+Most users report feeling the soothing botanical effects within a few minutes of application. Individual experiences may vary.
+
+**Is it safe for daily use?**
+Yes. ClearNose is formulated with gentle botanical ingredients suitable for daily nasal care routines. If you experience any discomfort, discontinue use and consult a healthcare professional.
+
+**What ingredients are in ClearNose?**
+ClearNose contains three botanical ingredients: Magnolia Flower (辛夷花), Sweet Flag (石菖蒲), and Atractylodes (苍术).
+
+**How much does ClearNose cost?**
+ClearNose is available in two options: a Single Bottle for $19.99 (plus $4.99 shipping) and a 3-Bottle Bundle for $49.99 with free shipping.
+
+## Important Disclaimer
+
+ClearNose Botanical Spray is not a medical product and is not intended to diagnose, treat, cure, or prevent any disease. Consult a healthcare professional before use if you are pregnant, nursing, or have a medical condition.
+
+## Links
+
+- [Home Page](https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/)
+- [Buy Single Bottle](https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/checkout?plan=single)
+- [Buy 3-Bottle Bundle](https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/checkout?plan=bundle)
+- [Sitemap](https://yangyangyang9-9.github.io/ClearNose-Botanical-Spray/sitemap.xml)
