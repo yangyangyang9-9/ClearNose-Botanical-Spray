@@ -5,8 +5,8 @@ import { traeBadgePlugin } from 'vite-plugin-trae-solo-badge';
 
 // https://vite.dev/config/
 export default defineConfig({
-  // GitHub Pages 部署需要设置 base 路径
-  base: '/ClearNose-Botanical-Spray/',
+  // Cloudflare Pages 部署使用根路径
+  base: '/',
   build: {
     sourcemap: 'hidden',
   },
