@@ -7,6 +7,7 @@
     "ingredients": "Ingredients",
     "reviews": "Reviews",
     "faq": "FAQ",
+    "sleepSupport": "Sleep Support",
     "pricing": "Buy Now",
     "buyNow": "Buy Now"
   },
@@ -156,6 +157,36 @@
         "text": "Promotes easier breathing without the stinging of chemical sprays. Will repurchase."
       }
     }
+  },
+  "sleepSupport": {
+    "badge": "Sleep Support",
+    "title": "Breathe better, sleep deeper",
+    "subtitle": "When nasal congestion keeps you awake, ClearNose helps open airways for a restful night.",
+    "heading": "Nighttime nasal support for deeper sleep",
+    "description": "Nasal congestion is one of the most common reasons for poor sleep quality. ClearNose Botanical Spray helps open nasal passages before bedtime, allowing you to breathe naturally through the night. The gentle plant-based formula works with your body's rhythm to support uninterrupted, restorative sleep.",
+    "cardLabel": "Recommended use",
+    "cardValue": "30 min before bed",
+    "benefits": {
+      "breathe": {
+        "title": "Opens nasal passages",
+        "desc": "Helps relieve nighttime congestion so you can breathe freely."
+      },
+      "sleep": {
+        "title": "Supports deeper sleep",
+        "desc": "Easy breathing through the night means fewer awakenings and better rest."
+      },
+      "natural": {
+        "title": "Non-habit forming",
+        "desc": "Plant-based botanicals — no harsh chemicals, no morning grogginess."
+      }
+    },
+    "tipsTitle": "Bedtime routine tips",
+    "tips": {
+      "1": "Spray ClearNose in each nostril about 30 minutes before going to bed.",
+      "2": "Breathe gently through your nose to let the botanical ingredients take effect.",
+      "3": "Keep your bedroom cool and humidified to maximize breathing comfort overnight."
+    },
+    "cta": "Try ClearNose tonight"
   },
   "faq": {
     "badge": "Good to Know",
